@@ -2,3 +2,16 @@
 .gtm/terminal.app:80,1583355600:80,r
 .circleci/build-image.sh:20,1583355600:20,m
 .circleci/config.yml:20,1583355600:20,m
+
+[ver:1,total:120]
+.gtm/terminal.app:60,1583355600:60,r
+.circleci/build-image.sh:30,1583355600:30,m
+Dockerfile.config-reloader:30,1583355600:30,m
+
+[ver:1,total:1860]
+.circleci/build-image.sh:787,1583352000:192,1583355600:595,m
+.gtm/terminal.app:421,1583352000:344,1583355600:77,r
+Dockerfile.config-reloader:278,1583352000:12,1583355600:266,m
+Dockerfile:252,1583352000:52,1583355600:200,m
+.circleci/load_env.sh:100,1583355600:100,r
+.circleci/config.yml:22,1583355600:22,r
