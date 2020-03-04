@@ -1,3 +1,7 @@
 [ver:1,total:420]
 .circleci/push_manifest.sh:210,1583301600:210,m
 .gtm/terminal.app:210,1583301600:210,r
+
+[ver:1,total:120]
+.gtm/terminal.app:75,1583301600:75,r
+.circleci/config.yml:45,1583301600:45,m
