@@ -4,12 +4,12 @@ build_jobs: &build_jobs
   jobs:
     - build-amd64
     - build-arm64
-    # - build-armhf
+    - build-armhf
     - push-manifest:
         requires:
           - build-amd64
           - build-arm64
-          # - build-armhf
+          - build-armhf
 
 workflows:
   version: 2
@@ -63,13 +63,13 @@ jobs:
       QEMU_ARCH: aarch64
       TAG: arm64
       TARGET: arm64v8
-  # build-armhf:
-  #   <<: *shared
-  #   environment:
-  #     GOARCH: arm
-  #     QEMU_ARCH: arm
-  #     TAG: arm
-  #     TARGET: arm32v6
+  build-armhf:
+    <<: *shared
+    environment:
+      GOARCH: arm
+      QEMU_ARCH: arm
+      TAG: arm
+      TARGET: arm32v6
   push-manifest:
     docker:
       - image: docker:stable-git
