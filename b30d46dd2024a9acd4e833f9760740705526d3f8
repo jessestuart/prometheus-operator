@@ -1,0 +1,4 @@
+[ver:1,total:120]
+.gtm/terminal.app:60,1583355600:60,r
+.circleci/build-image.sh:30,1583355600:30,m
+Dockerfile.config-reloader:30,1583355600:30,m
