@@ -3,7 +3,6 @@
 echo '
 export GITHUB_REPO=coreos/prometheus-operator
 export GOPATH=/go
-export GOROOT=/usr/local/go
 export IMAGE=prometheus-operator
 export REGISTRY=jessestuart
 

@@ -9,7 +9,7 @@
 # ENV CGO_ENABLED 0
 # ENV GO111MODULE on
 
-# ENV GO_PKG github.com/coreos/prometheus-operator
+# ENV GO_PKG github.com/coreos/prometheus-config-reloader
 
 # ARG VERSION
 
@@ -27,14 +27,14 @@ ARG VERSION
 LABEL \
   maintainer="Jesse Stuart <hi@jessestuart.com>" \
   org.label-schema.build-date=$BUILD_DATE \
-  org.label-schema.url="https://hub.docker.com/r/jessestuart/prometheus-operator" \
-  org.label-schema.vcs-url="https://github.com/jessestuart/prometheus-operator" \
+  org.label-schema.url="https://hub.docker.com/r/jessestuart/prometheus-config-reloader" \
+  org.label-schema.vcs-url="https://github.com/jessestuart/prometheus-config-reloader" \
   org.label-schema.vcs-ref=$VCS_REF \
   org.label-schema.schema-version="1.0" \
   org.label-schema.version="${VERSION}"
 
 COPY qemu-* /usr/bin/
 
-COPY operator /bin/operator
+COPY prometheus-config-reloader /bin/prometheus-config-reloader
 
-ENTRYPOINT ["/bin/operator"]
+ENTRYPOINT ["/bin/prometheus-config-reloader"]

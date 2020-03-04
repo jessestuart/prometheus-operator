@@ -46,6 +46,7 @@ shared: &shared
         name: Build and push Docker image.
         command: |
           source $BASH_ENV
+          apk add --update --no-cache go musl-dev gcc
           .circleci/build-image.sh
 
 jobs:
